@@ -12,7 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component' ;
 const routes: Routes = [
   { path: '' , redirectTo: 'home' , pathMatch: 'full' },
   { path: 'home' , component: HomeComponent },
-  { path: 'about' , component: FavoritesComponent},
+  { path: 'favorites' , component: FavoritesComponent},
   { path: 'contact' , component: ContactComponent}
 ];
 
