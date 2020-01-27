@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-import { Routes, RouterModule } from '@angular/router' ;
+import { Routes, RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component' ;
 
 const routes: Routes = [
   { path: '' , redirectTo: 'home' , pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
     AppComponent,
     FavoritesComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
