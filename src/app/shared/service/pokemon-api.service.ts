@@ -8,13 +8,16 @@ import { tap } from 'rxjs/Operators';
   providedIn: 'root'
 })
 export class PokemonApiService {
+  names = [];
 
   constructor(private http: HttpClient) {}
 
 
-  getAllPokemon(): Observable < Pokemon[] > {
-    return this.http
-      .get < Pokemon[] > ('https://pokeapi.co/api/v2/pokemon/?limit=800')
-      .pipe(tap(res => console.log(res)));
+  getAllPokemon(index: string): Observable < Pokemon[] > {
+      return this.http
+      .get < Pokemon[] > (`https://pokeapi.co/api/v2/pokemon/${index}`)
+      .pipe(tap( res => console.log(res.name)));
+    }
+
   }
-}
+

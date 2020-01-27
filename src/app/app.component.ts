@@ -14,6 +14,8 @@ export class AppComponent implements OnInit{
   constructor(private pokemonApiService: PokemonApiService) {}
 
   ngOnInit() {
-    this.pokemonApiService.getAllPokemon().subscribe(pokemons => this.pokemon = pokemons);
+    for(let j = 1; j < 808; j++) {
+      this.pokemonApiService.getAllPokemon(j).subscribe(pokemons => this.pokemon = pokemons);
+    }
   }
 }
