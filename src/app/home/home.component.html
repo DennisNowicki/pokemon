@@ -1,1 +1,4 @@
-<p>home works!</p>
+<h3>Welcome pokemon trainers! Choose your pets</h3>
+<li *ngFor="let pokemon of pokemon$ | async" (click)="addFavie(pokemon)">
+    {{pokemon.id}} {{pokemon.name}}
+</li>
