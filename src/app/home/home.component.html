@@ -3,7 +3,7 @@
 <br>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-1" *ngFor="let pokemon of pokemon$ | async" (click)="addFavie(pokemon)">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" *ngFor="let pokemon of pokemon$ | async" (click)="addFavie(pokemon)">
             <br>
             <div class="pokecss" (click)="addFavie(pokemon)">
                 {{pokemon.name}}
