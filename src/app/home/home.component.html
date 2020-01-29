@@ -1,4 +1,13 @@
+<br>
 <h3>Welcome pokemon trainers! Choose your pets</h3>
-<li *ngFor="let pokemon of pokemon$ | async" (click)="addFavie(pokemon)">
-    {{pokemon.id}} {{pokemon.name}}
-</li>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1" *ngFor="let pokemon of pokemon$ | async" (click)="addFavie(pokemon)">
+            <br>
+            <div class="pokecss" (click)="addFavie(pokemon)">
+                {{pokemon.name}}
+            </div>
+        </div>
+    </div>
+</div>

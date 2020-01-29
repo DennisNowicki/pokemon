@@ -1,0 +1,11 @@
+.fullwidth{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.navbar{
+    height: 80px;
+    font-size: 25px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
